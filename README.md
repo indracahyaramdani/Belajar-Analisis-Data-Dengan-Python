@@ -1,5 +1,7 @@
 # Belajar-Analisis-Data-Dengan-Python
+![](https://github.com/indracahyaramdani/Belajar-Analisis-Data-Dengan-Python/blob/main/dashboard/Dashboard.png?raw=true)
 
+Anda dapat melihat dashboard saya melalui [link ini](https://bike-indra.streamlit.app/)
 
 # Cara Menjalankan Dashboard pada personal Env
 1. Salin repository
