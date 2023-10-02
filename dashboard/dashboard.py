@@ -2,19 +2,11 @@ import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
-import io
+
 
 
 df = pd.read_csv('https://raw.githubusercontent.com/indracahyaramdani/Belajar-Analisis-Data-Dengan-Python/main/dashboard/day_clean.csv')
 df['dteday'] = pd.to_datetime(df['dteday'])
-
-
-# buffer = io.StringIO()
-# df.info(buf=buffer)
-# s = buffer.getvalue()
-# st.text(s)
-
-
 
 
 
@@ -95,24 +87,7 @@ with col2:
 with col3:
     total_record = main_df['instant'].count()
     st.metric(label="Total Record", value=total_record)
-    # min_date = df['dteday'].min()
-    # max_date = df['dteday'].max()
-
-    # # Mengambil start_date & end_date dari date_input
-    # start_date, end_date = st.date_input(
-    #     label='Rentang Waktu',min_value=min_date,
-    #     max_value=max_date,
-    #     value=[min_date, max_date]
-    # )
-
-# genre = st.multiselect(
-#     label="Hari",
-#     options=('Sunday', 'Monday', 'Tuesday','Wednesday','Thuesday','Friday','Saturday'),
-#     default =['Sunday', 'Monday', 'Tuesday','Wednesday','Thuesday','Friday','Saturday']
-# )
-
-
-
+ 
 
 st.subheader('Count of bikes during different Season',divider='rainbow')
 season(main_df)
