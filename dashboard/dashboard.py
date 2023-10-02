@@ -89,7 +89,7 @@ with col3:
     st.metric(label="Total Record", value=total_record)
  
 
-st.subheader('Count of bikes during different Season')
+st.subheader('Count of bikes during different Season',divider='grey')
 season(main_df)
 
 #st.subheader('Count of bikes during different months',divider='rainbow')
