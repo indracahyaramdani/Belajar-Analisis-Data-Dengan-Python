@@ -5,7 +5,7 @@ import seaborn as sns
 import io
 
 
-df = pd.read_csv('day_clean.csv')
+df = pd.read_csv('https://raw.githubusercontent.com/indracahyaramdani/Belajar-Analisis-Data-Dengan-Python/main/dashboard/day_clean.csv')
 df['dteday'] = pd.to_datetime(df['dteday'])
 
 
