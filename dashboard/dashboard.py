@@ -89,14 +89,14 @@ with col3:
     st.metric(label="Total Record", value=total_record)
  
 
-st.subheader('Count of bikes during different Season',divider='rainbow')
+#st.subheader('Count of bikes during different Season',divider='rainbow')
 season(main_df)
 
-st.subheader('Count of bikes during different months',divider='rainbow')
+#st.subheader('Count of bikes during different months',divider='rainbow')
 months(main_df)
 
 
-st.subheader('Regression Count',divider='rainbow')
+#st.subheader('Regression Count',divider='rainbow')
 col1, col2 = st.columns(2)
  
 with col1:
